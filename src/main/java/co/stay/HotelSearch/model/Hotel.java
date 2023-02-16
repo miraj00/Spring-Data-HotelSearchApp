@@ -17,6 +17,7 @@ public class Hotel {
 	private String city;
 	private int pricePerNight;
 	
+	 
 	
 	public Long getId() {
 		return id;
@@ -36,12 +37,17 @@ public class Hotel {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getPricePerNighr() {
+	public int getPricePerNight() {
 		return pricePerNight;
 	}
 	public void setPricePerNighr(int pricePerNight) {
 		this.pricePerNight = pricePerNight;
 	}
+	
+	public Hotel() {
+		super();
+	}
+	
 	public Hotel(Long id, String hotelName, String city, int pricePerNight) {
 		super();
 		this.id = id;
