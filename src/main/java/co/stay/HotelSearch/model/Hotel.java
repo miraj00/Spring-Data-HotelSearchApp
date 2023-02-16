@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "hotel")
+@Table(name = "Hotel")
 public class Hotel {
 
 	@Id
@@ -15,7 +15,7 @@ public class Hotel {
 	private Long id;
 	private String hotelName;
 	private String city;
-	private int pricePerNighr;
+	private int pricePerNight;
 	
 	
 	public Long getId() {
@@ -37,23 +37,23 @@ public class Hotel {
 		this.city = city;
 	}
 	public int getPricePerNighr() {
-		return pricePerNighr;
+		return pricePerNight;
 	}
-	public void setPricePerNighr(int pricePerNighr) {
-		this.pricePerNighr = pricePerNighr;
+	public void setPricePerNighr(int pricePerNight) {
+		this.pricePerNight = pricePerNight;
 	}
-	public Hotel(Long id, String hotelName, String city, int pricePerNighr) {
+	public Hotel(Long id, String hotelName, String city, int pricePerNight) {
 		super();
 		this.id = id;
 		this.hotelName = hotelName;
 		this.city = city;
-		this.pricePerNighr = pricePerNighr;
+		this.pricePerNight = pricePerNight;
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Hotel [id=" + id + ", hotelName=" + hotelName + ", city=" + city + ", pricePerNighr=" + pricePerNighr
+		return "Hotel [id=" + id + ", hotelName=" + hotelName + ", city=" + city + ", pricePerNight=" + pricePerNight
 				+ "]";
 	}
 	
